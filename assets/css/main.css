@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 header {
@@ -9,24 +10,208 @@ header {
 }
 header .container {
   width: 95%;
-  position: relative;
-}
-header .container .nav {
-  background-color: yellow;
-  position: relative;
 }
 header .container .nav img {
   width: 60%;
 }
 header .container .nav .collapseDiv ul {
+  width: 70%;
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  font-size: 18px;
 }
-header .container .nav .collapseDiv ul li {
-  font-family: "Oswald", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
+header .container .nav .collapseDiv ul li a:hover {
+  color: #FF2800;
+}
+header .container .nav .collapseDiv ul .nav-link.home:hover + .homediv,
+header .container .nav .collapseDiv ul .nav-link.platform:hover + .platform-div,
+header .container .nav .collapseDiv ul .nav-link.news:hover + .newsdiv,
+header .container .nav .collapseDiv ul .nav-link.shop:hover + .shopdiv,
+header .container .nav .collapseDiv ul .nav-link.pages:hover + .pagesdiv {
+  display: block;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .homediv {
+  display: none;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: white;
+  padding-right: 15px;
+}
+header .container .nav .collapseDiv ul .homediv a {
+  text-decoration: none;
+  color: black;
+}
+header .container .nav .collapseDiv ul .homediv a:hover {
+  color: #FF2800;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .homediv:hover {
+  display: block;
+}
+header .container .nav .collapseDiv ul .platform-div {
+  width: 76%;
+  display: none;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: white;
+  padding-right: 15px;
+}
+header .container .nav .collapseDiv ul .platform-div:hover {
+  display: block;
+}
+header .container .nav .collapseDiv ul .platform-div .platformdiv {
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+}
+header .container .nav .collapseDiv ul .platform-div .cars {
+  width: 20%;
+}
+header .container .nav .collapseDiv ul .platform-div .cars h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+header .container .nav .collapseDiv ul .platform-div .cars p {
+  font-size: 18px;
+}
+header .container .nav .collapseDiv ul .platform-div .cars p i {
+  margin-right: 5px;
+}
+header .container .nav .collapseDiv ul .platform-div .parts {
+  width: 20%;
+}
+header .container .nav .collapseDiv ul .platform-div .parts h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+header .container .nav .collapseDiv ul .platform-div .parts p {
+  font-size: 18px;
+}
+header .container .nav .collapseDiv ul .platform-div .parts p i {
+  margin-right: 5px;
+}
+header .container .nav .collapseDiv ul .platform-div .industry {
+  background-image: url(/assets/img/autobid-mega-img-v2.jpg);
+  background-size: cover;
+  width: 60%;
+  padding: 0px;
+}
+header .container .nav .collapseDiv ul .platform-div .industry h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+header .container .nav .collapseDiv ul .platform-div .industry p {
+  color: white;
+  margin-left: 10px;
+}
+header .container .nav .collapseDiv ul .platform-div .industry button {
+  background-color: #FF2800;
+  color: white;
+  border: 2px solid #FF2800;
+  margin-left: 10px;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+}
+header .container .nav .collapseDiv ul .platform-div .industry button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: #FF2800;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .newsdiv {
+  display: none;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: white;
+  padding-right: 15px;
+}
+header .container .nav .collapseDiv ul .newsdiv a {
+  text-decoration: none;
+  color: black;
+}
+header .container .nav .collapseDiv ul .newsdiv a:hover {
+  color: #FF2800;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .newsdiv:hover {
+  display: block;
+}
+header .container .nav .collapseDiv ul .shopdiv {
+  display: none;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: white;
+  padding-right: 15px;
+}
+header .container .nav .collapseDiv ul .shopdiv a {
+  text-decoration: none;
+  color: black;
+}
+header .container .nav .collapseDiv ul .shopdiv a:hover {
+  color: #FF2800;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .shopdiv:hover {
+  display: block;
+}
+header .container .nav .collapseDiv ul .pagesdiv {
+  display: none;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: white;
+  padding-right: 15px;
+}
+header .container .nav .collapseDiv ul .pagesdiv a {
+  text-decoration: none;
+  color: black;
+}
+header .container .nav .collapseDiv ul .pagesdiv -- a:hover {
+  color: #FF2800;
+  transition: 0.3s;
+}
+header .container .nav .collapseDiv ul .pagesdiv:hover {
+  display: block;
+}
+header .container .nav .collapseDiv ul .homediv,
+header .container .nav .collapseDiv ul .platform-div,
+header .container .nav .collapseDiv ul .newsdiv,
+header .container .nav .collapseDiv ul .shopdiv,
+header .container .nav .collapseDiv ul .pagesdiv {
+  display: none;
 }
 header .container .nav .collapseDiv .basket {
   font-size: 20px;
@@ -35,41 +220,760 @@ header .container .nav .collapseDiv .basket:hover {
   color: #FF2800;
   transition: 0.3s;
 }
-header .container .nav .collapseDiv .search {
+header .container .nav .collapseDiv .sell {
   background-color: #FF2800;
-  width: 10%;
+  width: 15%;
   color: white;
-  font-family: "Oswald", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-  border: 3px solid #FF2800;
+  border: 2px solid #FF2800;
+  font-size: 20px;
 }
-header .container .nav .collapseDiv .search:hover {
+header .container .nav .collapseDiv .sell:hover {
   background-color: white;
   color: #FF2800;
-  border: 3px solid black;
+  border: 2px solid black;
   transition: 0.3s;
 }
-header .container .homediv {
-  background-color: white;
-  color: black;
-  width: 15%;
-  padding: 10px;
-  display: flex;
-  display: none;
-  gap: 15px;
-  flex-direction: column;
-  position: absolute;
-  top: 95px;
-  left: 230px;
-}
-header .container .homediv a {
-  color: black;
-  text-decoration: none;
-}
-header .container .home:hover {
+
+main #entrancesection {
   background-color: red;
+  width: 100%;
+  height: 660px;
 }
-header .container .home:hover .homediv {
-  display: block;
+main #entrancesection .carousel {
+  width: 100%;
+  height: 100%;
+}
+main #entrancesection .carousel img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main #entrancesection .carousel .mercedesdiv {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+}
+main #entrancesection .carousel .mercedesdiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #57d75b 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .mercedesdiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .bmwdiv {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+}
+main #entrancesection .carousel .bmwdiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .bmwdiv .wrapper h1 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #7f3648 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .bmwdiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .galendwagendiv {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+}
+main #entrancesection .carousel .galendwagendiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, blue 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .galendwagendiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .ferraridiv {
+  position: absolute;
+  bottom: 130px;
+  left: 80px;
+}
+main #entrancesection .carousel .ferraridiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .ferraridiv .wrapper h1 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #F5E302 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .ferraridiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #aboutsection {
+  width: 100%;
+  background-image: url(/assets/img/autobid-main_about-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+main #aboutsection .container {
+  width: 95%;
+  display: flex;
+  padding-top: 30px;
+}
+main #aboutsection .container .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #aboutsection .container .row .abouttext {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #aboutsection .container .row .abouttext h3 {
+  font-size: 20px;
+  color: #FF2800;
+}
+main #aboutsection .container .row .abouttext h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+main #aboutsection .container .row .abouttext p {
+  color: gray;
+  margin-bottom: 30px;
+}
+main #aboutsection .container .row .abouttext ul li {
+  font-weight: 200;
+  color: rgb(70, 70, 70);
+}
+main #aboutsection .container .row .abouttext ul li span {
+  color: black;
+  font-weight: bolder;
+}
+main #aboutsection .container .row .abouttext img {
+  width: 50%;
+}
+main #howitworks {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main #howitworks .container {
+  width: 95%;
+}
+main #howitworks .container .title {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+main #howitworks .container .title h3 {
+  color: #FF2800;
+  font-size: 20px;
+}
+main #howitworks .container .title h1 {
+  color: black;
+  font-weight: bolder;
+}
+main #howitworks .container .row {
+  position: relative;
+  padding-bottom: 30px;
+}
+main #howitworks .container .row .arrow1 {
+  position: absolute;
+  width: 20%;
+  left: 300px;
+  top: 50px;
+}
+main #howitworks .container .row .arrow2 {
+  position: absolute;
+  width: 20%;
+  right: 300px;
+  bottom: 10px;
+}
+main #howitworks .container .row .howitworksdiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main #howitworks .container .row .howitworksdiv img {
+  margin-bottom: 20px;
+}
+main #howitworks .container .row .howitworksdiv h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+main #demonstrator {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main #demonstrator .container {
+  width: 95%;
+}
+main #demonstrator .container .row .waviy {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: 3px dashed black;
+}
+main #demonstrator .container .row .waviy .p {
+  color: red;
+  font-size: 18px;
+  font-weight: bolder;
+}
+main #demonstrator .container .row .waviy span {
+  font-weight: bolder;
+  position: relative;
+  display: inline-block;
+  font-size: 60px;
+  color: black;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+main #offerssection {
+  width: 100%;
+  background-image: url(/assets/img/autobid-lots-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+main #offerssection .container {
+  width: 95%;
+  display: flex;
+  padding-top: 30px;
+}
+main #offerssection .container .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #offerssection .container .row .offerstext {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #offerssection .container .row .offerstext h3 {
+  font-size: 20px;
+  color: #FF2800;
+}
+main #offerssection .container .row .offerstext h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+main #offerssection .container .row .offerstext p {
+  color: gray;
+  margin-bottom: 30px;
+}
+main #offerssection .container .row .offerstext ul li {
+  font-weight: 200;
+  color: rgb(70, 70, 70);
+}
+main #offerssection .container .row .offerstext ul li span {
+  color: black;
+  font-weight: bolder;
+}
+main #offerssection .container .row .offerstext img {
+  width: 50%;
+}
+main #aboutcars {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #aboutcars .container {
+  width: 95%;
+}
+main #aboutcars .container .title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main #aboutcars .container .title h3 {
+  color: #FF2800;
+}
+main #aboutcars .container .title h1 {
+  font-weight: bolder;
+}
+main #aboutcars .container .row .cars {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(111, 111, 111);
+  text-align: center;
+  margin-bottom: 30px;
+}
+main #aboutcars .container .row .cars img {
+  width: 100%;
+}
+main #aboutcars .container .row .cars a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+main #aboutcars .container .row .cars:hover img {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+main #aboutcars .container .row .cars:hover a {
+  color: #FF2800;
+  transition: 0.5s;
+}
+main #testimonials {
+  width: 100%;
+  background-image: url(/assets/img/autobid-main_about.jpg);
+  background-size: cover;
+  padding-bottom: 30px;
+}
+main #testimonials .container {
+  width: 95%;
+  padding-bottom: 30px;
+}
+main #testimonials .container .row .testimonialstext {
+  margin-top: 30px;
+}
+main #testimonials .container .row .testimonialstext h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #FF2800;
+}
+main #testimonials .container .row .testimonialstext h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+main #testimonials .container .row .carusels {
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 28px rgb(111, 111, 111);
+  text-align: center;
+  margin-bottom: 30px;
+}
+main #testimonials .container .row .carusels .sheet-one {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+main #testimonials .container .row .carusels .sheet-one h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #FF2800;
+}
+main #testimonials .container .row .carusels .sheet-one p {
+  width: 60%;
+}
+main #testimonials .container .row .carusels .sheet-one .profilediv {
+  display: flex;
+  justify-content: center;
+}
+main #testimonials .container .row .carusels .sheet-one .profilediv img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+main #testimonials .container .row .carusels .sheet-one .profilediv .membername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #testimonials .container .row .carusels .sheet-one .profilediv .membername p {
+  width: 100%;
+}
+main #testimonials .container .row .carusels .sheet-two {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+main #testimonials .container .row .carusels .sheet-two h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #FF2800;
+}
+main #testimonials .container .row .carusels .sheet-two p {
+  width: 60%;
+}
+main #testimonials .container .row .carusels .sheet-two .profilediv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main #testimonials .container .row .carusels .sheet-two .profilediv img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+main #testimonials .container .row .carusels .sheet-two .profilediv .membername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #testimonials .container .row .carusels .sheet-three {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+main #testimonials .container .row .carusels .sheet-three h1 {
+  font-size: 20px;
+  color: #FF2800;
+  font-weight: bolder;
+}
+main #testimonials .container .row .carusels .sheet-three p {
+  width: 60%;
+}
+main #testimonials .container .row .carusels .sheet-three .profilediv {
+  display: flex;
+  justify-content: center;
+}
+main #testimonials .container .row .carusels .sheet-three .profilediv img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+main #testimonials .container .row .carusels .sheet-three .profilediv .membername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #newsletter {
+  width: 100%;
+  background-color: #FF2800;
+  height: 300px;
+  margin-bottom: 30px;
+}
+main #newsletter .container {
+  width: 95%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+main #newsletter .container img {
+  margin-top: -30px;
+  width: 80%;
+}
+main #newsletter .container .newslettertext {
+  margin-top: 30px;
+  height: 50%;
+  padding-top: 30px;
+  color: white;
+}
+main #newsletter .container .newslettertext h1 {
+  font-size: 35px;
+}
+main #news {
+  width: 100%;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+main #news .container {
+  width: 95%;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+main #news .container .title {
+  padding-top: 30px;
+  margin-top: 30px;
+}
+main #news .container .title h3 {
+  color: #FF2800;
+  font-size: 25px;
+  font-weight: bolder;
+}
+main #news .container .title h1 {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  main #aboutsection {
+    background-image: none;
+    background-color: #F2F2F2;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #newsletter {
+    height: 150px;
+  }
+  main #newsletter .container img {
+    width: 60%;
+  }
+  main #newsletter .container .newslettertext h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #newsletter {
+    height: 80px;
+  }
+  main #newsletter .container img {
+    width: 45%;
+  }
+  main #newsletter .container .newslettertext {
+    display: flex;
+    padding-top: 0px;
+  }
+  main #newsletter .container .newslettertext h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #newsletter {
+    height: 80px;
+  }
+  main #newsletter .container img {
+    width: 45%;
+  }
+  main #newsletter .container .newslettertext {
+    display: flex;
+    padding-top: 0px;
+  }
+  main #newsletter .container .newslettertext h1 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #offerssection {
+    background-image: none;
+    background-color: #F2F2F2;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #testimonials .container .row .carusels .sheet-one h1 {
+    font-size: 15px;
+  }
+  main #testimonials .container .row .carusels .sheet-one p {
+    font-size: 13px;
+  }
+  main #testimonials .container .row .carusels .sheet-one .profilediv img {
+    height: 75px;
+    width: 75px;
+  }
+  main #testimonials .container .row .carusels .sheet-two h1 {
+    font-size: 15px;
+  }
+  main #testimonials .container .row .carusels .sheet-two p {
+    font-size: 13px;
+  }
+  main #testimonials .container .row .carusels .sheet-two .profilediv img {
+    height: 75px;
+    width: 75px;
+  }
+  main #testimonials .container .row .carusels .sheet-three h1 {
+    font-size: 15px;
+  }
+  main #testimonials .container .row .carusels .sheet-three p {
+    font-size: 13px;
+  }
+  main #testimonials .container .row .carusels .sheet-three .profilediv img {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main #testimonials .container .row .testimonialstext h3 {
+    font-size: 20px;
+  }
+  main #testimonials .container .row .testimonialstext h1 {
+    font-size: 25px;
+  }
+  main #testimonials .container .row .carusels .sheet-one h1 {
+    font-size: 12px;
+  }
+  main #testimonials .container .row .carusels .sheet-one p {
+    font-size: 10px;
+  }
+  main #testimonials .container .row .carusels .sheet-one .profilediv img {
+    height: 60px;
+    width: 60px;
+  }
+  main #testimonials .container .row .carusels .sheet-two h1 {
+    font-size: 12px;
+  }
+  main #testimonials .container .row .carusels .sheet-two p {
+    font-size: 10px;
+  }
+  main #testimonials .container .row .carusels .sheet-two .profilediv img {
+    height: 60px;
+    width: 60px;
+  }
+  main #testimonials .container .row .carusels .sheet-three h1 {
+    font-size: 12px;
+  }
+  main #testimonials .container .row .carusels .sheet-three p {
+    font-size: 10px;
+  }
+  main #testimonials .container .row .carusels .sheet-three .profilediv img {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 390px) {
+  main #testimonials .container .row .testimonialstext h3 {
+    font-size: 15px;
+  }
+  main #testimonials .container .row .testimonialstext h1 {
+    font-size: 20px;
+  }
+  main #testimonials .container .row .carusels .sheet-one h1 {
+    font-size: 8px;
+  }
+  main #testimonials .container .row .carusels .sheet-one p {
+    font-size: 8px;
+  }
+  main #testimonials .container .row .carusels .sheet-two h1 {
+    font-size: 8px;
+  }
+  main #testimonials .container .row .carusels .sheet-two p {
+    font-size: 8px;
+  }
+  main #testimonials .container .row .carusels .sheet-three h1 {
+    font-size: 8px;
+  }
+  main #testimonials .container .row .carusels .sheet-three p {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main #howitworks .container .row .arrow1 {
+    width: 20%;
+    left: 220px;
+    top: 80px;
+  }
+  main #howitworks .container .row .arrow2 {
+    width: 20%;
+    right: 220px;
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main #howitworks .container .row .howitworksdiv h1 {
+    font-size: 15px;
+  }
+  main #howitworks .container .row .howitworksdiv p {
+    font-size: 15px;
+  }
+  main #howitworks .container .row .arrow1 {
+    width: 20%;
+    left: 165px;
+    top: 80px;
+  }
+  main #howitworks .container .row .arrow2 {
+    width: 20%;
+    right: 165px;
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #howitworks .container .row .arrow1 {
+    display: none;
+  }
+  main #howitworks .container .row .arrow2 {
+    display: none;
+  }
 }
