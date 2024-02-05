@@ -7,9 +7,11 @@
 }
 header{
   width: 100%;
+z-index: 1;
   .container{
     width: 95%;
   .nav{
+    z-index: 1000;
     img{
         width: 60%;
     }
@@ -250,8 +252,7 @@ main{
     #entrancesection{
         background-color: red;
         width: 100%;
-height: 660px;
-      
+height: 700px;
         .carousel{
             width: 100%;
             height: 100%;
@@ -262,8 +263,8 @@ height: 660px;
             }
             .mercedesdiv{
 position: absolute;
-bottom: 80px;
-    left: 60px;
+top: 60px;
+    left: 200px;
 $avatar-size: 32px;
 $body-background: #353535;
 
@@ -272,7 +273,7 @@ $body-background: #353535;
   text-align: center;
   h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 80px;
     text-transform: uppercase;
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
@@ -304,8 +305,8 @@ $body-background: #353535;
   
 .bmwdiv{
     position: absolute;
-    bottom: 80px;
-        left: 60px;
+    top: 40px;
+    left: 400px;
     $avatar-size: 32px;
     $body-background: #353535;
     
@@ -314,11 +315,11 @@ $body-background: #353535;
       text-align: center;
       h1 {
         color: #fff;
-        font-size: 45px;
+        font-size: 80px;
         text-transform: uppercase;
         font-weight: 700;
         font-family: "Josefin Sans", sans-serif;
-        background: linear-gradient(to right,#010d18 10%, #02131b 50%,#7f3648 60%);
+        background: linear-gradient(to right,#010d18 10%, #02131b 50%,#F76163 60%);
         background-size: auto auto;
         background-clip: border-box;
         background-size: 200% auto;
@@ -344,10 +345,10 @@ $body-background: #353535;
       
     }
 
-    .galendwagendiv{
+    .tesladiv{
         position: absolute;
-        bottom: 80px;
-            left: 60px;
+        top: 40px;
+        left: 500px;
         $avatar-size: 32px;
         $body-background: #353535;
         
@@ -356,11 +357,11 @@ $body-background: #353535;
           text-align: center;
           h1 {
             color: #fff;
-            font-size: 45px;
+            font-size: 80px;
             text-transform: uppercase;
             font-weight: 700;
             font-family: "Josefin Sans", sans-serif;
-            background: linear-gradient(to right,#010d18 10%, #02131b 50%,blue 60%);
+            background: linear-gradient(to right,#010d18 10%, #02131b 50%,#F8572A 60%);
             background-size: auto auto;
             background-clip: border-box;
             background-size: 200% auto;
@@ -385,12 +386,180 @@ $body-background: #353535;
         
           
         }
+        .toggdiv{
+            position: absolute;
+            top: 20px;
+            left: 550px;
+            $avatar-size: 32px;
+            $body-background: #353535;
+            
+            
+            .wrapper {
+              text-align: center;
+              h1 {
+                color: #fff;
+                font-size: 80px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Josefin Sans", sans-serif;
+                background: linear-gradient(to right,#010d18 10%, #02131b 50%,#BAE4EF 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+             
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 1.5s linear infinite;
+                display: inline-block;
+                span{
+                    font-size: 25px;
+                }
+              }
+            }
+            
+            @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
+            
+              
+            }
+    
 
+    .toyotadiv{
+        position: absolute;
+        top: 30px;
+    left: 450px;
+        $avatar-size: 32px;
+        $body-background: #353535;
+        
+        
+        .wrapper {
+          text-align: center;
+          h1 {
+            color: #fff;
+            font-size: 80px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: "Josefin Sans", sans-serif;
+            background: linear-gradient(to right,#010d18 10%, #02131b 50%,#C6E066 60%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+         
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 1.5s linear infinite;
+            display: inline-block;
+            span{
+                font-size: 25px;
+            }
+          }
+        }
+        
+        @keyframes textclip {
+          to {
+            background-position: 200% center;
+          }
+        }
+        
+          
+        }
+        .forddiv{
+            position: absolute;
+            top: 50px;
+        left: 500px;
+            $avatar-size: 32px;
+            $body-background: #353535;
+            
+            
+            .wrapper {
+              text-align: center;
+              h1 {
+                color: #fff;
+                font-size: 80px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Josefin Sans", sans-serif;
+                background: linear-gradient(to right,#010d18 10%, #02131b 50%,#EA9610 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+             
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 1.5s linear infinite;
+                display: inline-block;
+                span{
+                    font-size: 25px;
+                }
+              }
+            }
+            
+            @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
+            
+              
+            }
+    
+
+        .galendwagendiv{
+            position: absolute;
+            top: 15px;
+        left: 350px;
+            $avatar-size: 32px;
+            $body-background: #353535;
+            
+            
+            .wrapper {
+              text-align: center;
+              h1 {
+                color: #fff;
+                font-size: 80px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Josefin Sans", sans-serif;
+                background: linear-gradient(to right,#010d18 10%, #02131b 50%,blue 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+             
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 1.5s linear infinite;
+                display: inline-block;
+                span{
+                    font-size: 25px;
+                }
+              }
+            }
+            
+            @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
+            
+              
+            }
+    
 
 .ferraridiv{
     position: absolute;
- bottom: 130px;
-    left: 80px;
+    top: 40px;
+    left: 300px;
     $avatar-size: 32px;
     $body-background: #353535;
     
@@ -402,11 +571,11 @@ $body-background: #353535;
       text-align: center;
       h1 {
         color: #fff;
-        font-size: 45px;
+        font-size: 80px;
         text-transform: uppercase;
         font-weight: 700;
         font-family: "Josefin Sans", sans-serif;
-        background: linear-gradient(to right,#010d18 10%, #02131b 50%, #F5E302 60%);
+        background: linear-gradient(to right,#010d18 10%, #02131b 50%, red 60%);
         background-size: auto auto;
         background-clip: border-box;
         background-size: 200% auto;
@@ -434,6 +603,97 @@ $body-background: #353535;
 }
 
         }
+
+
+#products{
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .container{
+        width: 95%;
+        .title{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            h1{
+                font-weight: bolder;
+            }
+        }
+        #ourproducts{
+            .box{
+                .boxproducts{
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 20px rgb(111, 111, 111);
+                    text-align: center;
+                    margin-bottom: 30px;
+                    transition: transform 0.3s ease;
+
+                    cursor: pointer;
+                    img{width: 100%;
+                        border-radius: 10px;
+                    }
+                    h1{
+                        font-weight: bolder;
+                        color: black;
+                        font-size: 25px;
+                        margin-top: 15px;
+                    }
+                    .detail{
+                     display: flex;
+                     text-align: start;
+                     justify-content: space-between;
+font-weight: bolder;       
+               
+                    }
+                    p{
+                        font-weight: bolder;
+                        span{
+                            color: $main-color;
+                        }  
+                    }
+                    button{
+                        background-color: $main-color;
+                        color: white;
+                        border: 2px solid $main-color;
+                        margin-left: 10px;
+                            width: 50%;
+                            border-radius: 5px;
+                            padding: 5px;
+                        &:hover{
+                            background-color: white;
+                            border: 2px solid black;
+                            color: $main-color;
+                            transition: 0.3s;
+                            
+                        }
+                    }
+                }
+                .boxproducts:hover{
+                    transform: scale(1.1); 
+h1{
+    color: $main-color;
+    transition: 0.3s;
+}
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
        #aboutsection{
         width: 100%;
         background-image: url(/assets/img/autobid-main_about-1.jpg);
@@ -850,6 +1110,7 @@ margin-bottom: 30px;
     width: 100%;
     padding-top: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
     .container{
         width: 95%;
         margin-top: 30px;
@@ -857,6 +1118,7 @@ margin-bottom: 30px;
         .title{
             padding-top: 30px;
             margin-top: 30px;
+            margin-bottom: 30px;
             h3{
                 color: $main-color;
                 font-size: 25px;
@@ -864,6 +1126,50 @@ margin-bottom: 30px;
             }
             h1{
                 font-weight: bolder;
+            }
+        }
+        .newsdiv{
+            border-radius: 10px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgb(111, 111, 111);
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+           
+            h1{
+                font-size: 20px;
+                margin-top: 15px;
+                font-weight: bolder;
+           color: black;
+            }
+            p{
+                color: black;
+                font-weight: bolder;
+            }
+            a{
+                color: $main-color;
+                text-decoration: none;
+                i{
+                    margin-left: 5px;
+                }
+            }
+            a:hover{
+                i{
+                    margin-left: 15px;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .newsdiv:hover{
+            transform: scale(1.1); 
+            h1{
+                color: $main-color;
             }
         }
     }
@@ -875,6 +1181,123 @@ margin-bottom: 30px;
 
 
 }
+
+
+
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #0A0A0A;
+    .container{
+        width: 90%;
+        .contactdiv{
+            display: flex;
+            flex-direction: column;
+            img
+            {
+                width: 30%;
+                margin-top: 30px;
+            }
+            h1{
+                color: white;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            span{
+                color: white;
+                font-weight: bolder;
+            }
+        }
+        .socialmediadiv{
+            margin-top: 30px;
+            padding-top: 30px;
+            h1{
+                color: white;
+                font-size: 30px;
+                font-weight: bolder; 
+            }
+        
+.buttonsdiv{
+    margin-top: 30px;
+    .social {
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+        cursor: pointer;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        display: inline-block;
+        font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      
+      .social:hover {
+        box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+      }
+      .tw{
+        background-color:#28A6DC;
+        box-shadow:  #085475 0 -25px 18px -14px inset, #085475 0 1px 2px, #085475 0 2px 4px, #085475 0 4px 8px, #085475 0 8px 16px, #085475 0 16px 32px;
+        color: blue;
+      
+      }
+      .ins{
+     
+        background-color:   #CD325D;
+        box-shadow:    #820f30 0 -25px 18px -14px inset,   #820f30  0 1px 2px,   #820f30  0 2px 4px,   #820f30 0 4px 8px,   #820f30  0 8px 16px,   #820f30 0 16px 32px;
+        color:  white;
+      }
+      .tt{
+        background-color:  black;
+        box-shadow:    #E91F57 0 -25px 18px -14px inset,  #E91F57 0 1px 2px,  #E91F57 0 2px 4px,  #E91F57 4px 8px,  #E91F57  0 8px 16px,  #E91F57 0 16px 32px;
+        color:   white;
+      }
+      .ln{
+        background-color:#08648c;
+        box-shadow:  #043a52 0 -25px 18px -14px inset, #043a52 0 1px 2px, #043a52 0 2px 4px, #043a52 0 4px 8px, #043a52 0 8px 16px, #043a52 0 16px 32px;
+        color: white;
+      
+      }
+      .da{
+        background-color:   #00FBAC;
+        box-shadow:    #035b3f 0 -25px 18px -14px inset,    #035b3f 0 1px 2px,   #035b3f 0 2px 4px,   #035b3f 4px 8px,   #035b3f 0 8px 16px,   #035b3f 0 16px 32px;
+        color:   white;
+      }
+      .wp{
+        background-color:   #00FBAC;
+        box-shadow:    #035b3f 0 -25px 18px -14px inset,    #035b3f 0 1px 2px,   #035b3f 0 2px 4px,   #035b3f 4px 8px,   #035b3f 0 8px 16px,   #035b3f 0 16px 32px;
+        color:   white;
+      }
+} 
+
+
+        }
+        .footdiv{
+            text-align: center;
+           margin-top: 30px;
+           padding-top: 30px;
+            text-align: center;
+            p{
+                color: $main-color;
+                font-size: 25px;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
+
+
+
 // MEDIASCREENS
     
     @media screen  and (max-width:768px) {
@@ -1195,6 +1618,9 @@ margin-bottom: 30px;
                     }
                 }
             }
+
+
+
         }
     }  
 @media screen and (max-width:768px) {
@@ -1214,3 +1640,820 @@ margin-bottom: 30px;
         }
     }
 }
+
+@media screen and (max-width:1092px) {
+    main{
+        #entrancesection{
+            height: 500px;
+            .carousel{
+.mercedesdiv{
+    .wrapper{
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+.ferraridiv{
+    .wrapper{
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+.bmwdiv{
+    left: 340px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+.tesladiv{
+    left:340px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:340px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+          
+        }
+    }
+}
+.toyotadiv{
+    left:340px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:280px;
+    top: 20px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 340px;
+   top: 50px;
+    .wrapper{
+        h1{
+            font-size: 50px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:920px) {
+    main{
+        #entrancesection{
+            height: 500px;
+            .carousel{
+.mercedesdiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+.ferraridiv{
+    left: 200px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+.bmwdiv{
+    left: 200px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+.tesladiv{
+    left:200px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:200px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+          
+        }
+    }
+}
+.toyotadiv{
+    left:250px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:180px;
+    top: 20px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 300px;
+   top: 80px;
+    .wrapper{
+        h1{
+            font-size: 40px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:690px) {
+    main{
+        #entrancesection{
+            height: 500px;
+            .carousel{
+.mercedesdiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.ferraridiv{
+    left: 200px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.bmwdiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.tesladiv{
+    left:150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.toyotadiv{
+    left:250px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:180px;
+    top: 20px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 200px;
+   top: 80px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    main{
+        #entrancesection{
+            height: 400px;
+            .carousel{
+.mercedesdiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.ferraridiv{
+    left: 200px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.bmwdiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
+.tesladiv{
+    left:150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:150px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.toyotadiv{
+    left:250px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:150px;
+    top: 20px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 200px;
+   top: 80px;
+    .wrapper{
+        h1{
+            font-size: 30px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+@media screen and (max-width:535px) {
+    main{
+        #entrancesection{
+            height: 400px;
+            .carousel{
+.mercedesdiv{
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+.ferraridiv{
+    left: 150px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+.bmwdiv{
+    left: 120px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+.tesladiv{
+    left:120px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:120px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+          
+        }
+    }
+}
+.toyotadiv{
+    left:200px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:120px;
+    top: 20px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 150px;
+   top: 80px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    main{
+        #entrancesection{
+            height: 350px;
+            .carousel{
+.mercedesdiv{
+    top: 40px;
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.ferraridiv{
+    left: 120px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+.bmwdiv{
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.tesladiv{
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.toggdiv{
+    top: 20px;
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.toyotadiv{
+    left:170px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.galendwagendiv{
+    left:120px;
+    top: 15px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.forddiv{
+   left: 130px;
+   top: 60px;
+    .wrapper{
+        h1{
+            font-size: 25px;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+            }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    main{
+        #entrancesection{
+            height: 300px;
+            .carousel{
+               
+.mercedesdiv{
+    top: 40px;
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.ferraridiv{
+    top: 30px;
+    left: 80px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.bmwdiv{
+    top: 30px;
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.tesladiv{
+    top: 30px;
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+          
+        }
+    }
+}
+.toggdiv{
+    top: 10px;
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+          
+        }
+    }
+}
+.toyotadiv{
+    top: 20px;
+    left:150px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:80px;
+    top: 10px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+          
+        }
+    }
+}
+.forddiv{
+   left: 140px;
+   top: 50px;
+    .wrapper{
+        h1{
+            font-size: 20px;
+            span{
+                font-size: 18px;
+            }
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+@media screen and (max-width:415px) {
+    main{
+        #entrancesection{
+            height: 300px;
+            .carousel{
+.mercedesdiv{
+    top: 40px;
+    left: 100px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+        }
+    }
+}
+.ferraridiv{
+    top: 30px;
+    left: 80px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+        }
+    }
+}
+.bmwdiv{
+    top: 30px;
+    left: 70px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+        }
+    }
+}
+.tesladiv{
+    top: 20px;
+    left:70px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          
+        }
+    }
+}
+.toggdiv{
+    top: 10px;
+    left:70px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          
+        }
+    }
+}
+.toyotadiv{
+    top: 20px;
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          
+        }
+    }
+}
+.galendwagendiv{
+    left:80px;
+    top: 10px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          
+        }
+    }
+}
+.forddiv{
+   left: 100px;
+   top: 60px;
+    .wrapper{
+        h1{
+            font-size:15px;
+          
+        }
+    }
+}
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:330px) {
+    main{
+        #entrancesection{
+            height: 250px;
+            .carousel{
+.mercedesdiv{
+    top: 40px;
+    left: 70px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.ferraridiv{
+    top: 30px;
+    left: 80px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.bmwdiv{
+    top: 30px;
+    left: 80px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.tesladiv{
+    top: 35px;
+    left:80px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+            span{
+                font-size: 10px;
+            }
+          
+        }
+    }
+}
+.toggdiv{
+    top: 10px;
+    left:100px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          span{
+            font-size: 10px;
+          }
+        }
+    }
+}
+.toyotadiv{
+    top: 20px;
+    left:130px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          span{
+            font-size: 10px;
+          }
+        }
+    }
+}
+.galendwagendiv{
+    left:80px;
+    top: 10px;
+    .wrapper{
+        h1{
+            font-size: 15px;
+          span{
+            font-size: 10px;
+          }
+        }
+    }
+}
+.forddiv{
+   left: 130px;
+   top: 50px;
+    .wrapper{
+        h1{
+            font-size:15px;
+          span{
+            font-size: 10px;
+          }
+        }
+    }
+}
+            }
+        }
+    }
+}
+

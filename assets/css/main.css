@@ -7,9 +7,13 @@
 
 header {
   width: 100%;
+  z-index: 1;
 }
 header .container {
   width: 95%;
+}
+header .container .nav {
+  z-index: 1000;
 }
 header .container .nav img {
   width: 60%;
@@ -237,7 +241,7 @@ header .container .nav .collapseDiv .sell:hover {
 main #entrancesection {
   background-color: red;
   width: 100%;
-  height: 660px;
+  height: 700px;
 }
 main #entrancesection .carousel {
   width: 100%;
@@ -250,15 +254,15 @@ main #entrancesection .carousel img {
 }
 main #entrancesection .carousel .mercedesdiv {
   position: absolute;
-  bottom: 80px;
-  left: 60px;
+  top: 60px;
+  left: 200px;
 }
 main #entrancesection .carousel .mercedesdiv .wrapper {
   text-align: center;
 }
 main #entrancesection .carousel .mercedesdiv .wrapper h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
@@ -283,19 +287,19 @@ main #entrancesection .carousel .mercedesdiv .wrapper h1 span {
 }
 main #entrancesection .carousel .bmwdiv {
   position: absolute;
-  bottom: 80px;
-  left: 60px;
+  top: 40px;
+  left: 400px;
 }
 main #entrancesection .carousel .bmwdiv .wrapper {
   text-align: center;
 }
 main #entrancesection .carousel .bmwdiv .wrapper h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #7f3648 60%);
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #F76163 60%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -314,17 +318,149 @@ main #entrancesection .carousel .bmwdiv .wrapper h1 span {
     background-position: 200% center;
   }
 }
+main #entrancesection .carousel .tesladiv {
+  position: absolute;
+  top: 40px;
+  left: 500px;
+}
+main #entrancesection .carousel .tesladiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .tesladiv .wrapper h1 {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #F8572A 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .tesladiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .toggdiv {
+  position: absolute;
+  top: 20px;
+  left: 550px;
+}
+main #entrancesection .carousel .toggdiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .toggdiv .wrapper h1 {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #BAE4EF 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .toggdiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .toyotadiv {
+  position: absolute;
+  top: 30px;
+  left: 450px;
+}
+main #entrancesection .carousel .toyotadiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .toyotadiv .wrapper h1 {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #C6E066 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .toyotadiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+main #entrancesection .carousel .forddiv {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+}
+main #entrancesection .carousel .forddiv .wrapper {
+  text-align: center;
+}
+main #entrancesection .carousel .forddiv .wrapper h1 {
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #EA9610 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+main #entrancesection .carousel .forddiv .wrapper h1 span {
+  font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 main #entrancesection .carousel .galendwagendiv {
   position: absolute;
-  bottom: 80px;
-  left: 60px;
+  top: 15px;
+  left: 350px;
 }
 main #entrancesection .carousel .galendwagendiv .wrapper {
   text-align: center;
 }
 main #entrancesection .carousel .galendwagendiv .wrapper h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
@@ -349,19 +485,19 @@ main #entrancesection .carousel .galendwagendiv .wrapper h1 span {
 }
 main #entrancesection .carousel .ferraridiv {
   position: absolute;
-  bottom: 130px;
-  left: 80px;
+  top: 40px;
+  left: 300px;
 }
 main #entrancesection .carousel .ferraridiv .wrapper {
   text-align: center;
 }
 main #entrancesection .carousel .ferraridiv .wrapper h1 {
   color: #fff;
-  font-size: 45px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(to right, #010d18 10%, #02131b 50%, #F5E302 60%);
+  background: linear-gradient(to right, #010d18 10%, #02131b 50%, red 60%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -379,6 +515,76 @@ main #entrancesection .carousel .ferraridiv .wrapper h1 span {
   to {
     background-position: 200% center;
   }
+}
+main #products {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+main #products .container {
+  width: 95%;
+}
+main #products .container .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #products .container .title h1 {
+  font-weight: bolder;
+}
+main #products .container #ourproducts .box .boxproducts {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(111, 111, 111);
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+main #products .container #ourproducts .box .boxproducts img {
+  width: 100%;
+  border-radius: 10px;
+}
+main #products .container #ourproducts .box .boxproducts h1 {
+  font-weight: bolder;
+  color: black;
+  font-size: 25px;
+  margin-top: 15px;
+}
+main #products .container #ourproducts .box .boxproducts .detail {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+main #products .container #ourproducts .box .boxproducts p {
+  font-weight: bolder;
+}
+main #products .container #ourproducts .box .boxproducts p span {
+  color: #FF2800;
+}
+main #products .container #ourproducts .box .boxproducts button {
+  background-color: #FF2800;
+  color: white;
+  border: 2px solid #FF2800;
+  margin-left: 10px;
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+}
+main #products .container #ourproducts .box .boxproducts button:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: #FF2800;
+  transition: 0.3s;
+}
+main #products .container #ourproducts .box .boxproducts:hover {
+  transform: scale(1.1);
+}
+main #products .container #ourproducts .box .boxproducts:hover h1 {
+  color: #FF2800;
+  transition: 0.3s;
 }
 main #aboutsection {
   width: 100%;
@@ -771,6 +977,7 @@ main #news {
   width: 100%;
   padding-top: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 main #news .container {
   width: 95%;
@@ -780,6 +987,7 @@ main #news .container {
 main #news .container .title {
   padding-top: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 main #news .container .title h3 {
   color: #FF2800;
@@ -788,6 +996,149 @@ main #news .container .title h3 {
 }
 main #news .container .title h1 {
   font-weight: bolder;
+}
+main #news .container .newsdiv {
+  border-radius: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(111, 111, 111);
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+main #news .container .newsdiv img {
+  width: 100%;
+  border-radius: 10px;
+}
+main #news .container .newsdiv h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bolder;
+  color: black;
+}
+main #news .container .newsdiv p {
+  color: black;
+  font-weight: bolder;
+}
+main #news .container .newsdiv a {
+  color: #FF2800;
+  text-decoration: none;
+}
+main #news .container .newsdiv a i {
+  margin-left: 5px;
+}
+main #news .container .newsdiv a:hover i {
+  margin-left: 15px;
+  transition: 0.5s;
+}
+main #news .container .newsdiv:hover {
+  transform: scale(1.1);
+}
+main #news .container .newsdiv:hover h1 {
+  color: #FF2800;
+}
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #0A0A0A;
+}
+footer .container {
+  width: 90%;
+}
+footer .container .contactdiv {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .contactdiv img {
+  width: 30%;
+  margin-top: 30px;
+}
+footer .container .contactdiv h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+footer .container .contactdiv span {
+  color: white;
+  font-weight: bolder;
+}
+footer .container .socialmediadiv {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+footer .container .socialmediadiv h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+footer .container .socialmediadiv .buttonsdiv {
+  margin-top: 30px;
+}
+footer .container .socialmediadiv .buttonsdiv .social {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px, rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px, rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+footer .container .socialmediadiv .buttonsdiv .social:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px, rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px, rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+footer .container .socialmediadiv .buttonsdiv .tw {
+  background-color: #28A6DC;
+  box-shadow: #085475 0 -25px 18px -14px inset, #085475 0 1px 2px, #085475 0 2px 4px, #085475 0 4px 8px, #085475 0 8px 16px, #085475 0 16px 32px;
+  color: blue;
+}
+footer .container .socialmediadiv .buttonsdiv .ins {
+  background-color: #CD325D;
+  box-shadow: #820f30 0 -25px 18px -14px inset, #820f30 0 1px 2px, #820f30 0 2px 4px, #820f30 0 4px 8px, #820f30 0 8px 16px, #820f30 0 16px 32px;
+  color: white;
+}
+footer .container .socialmediadiv .buttonsdiv .tt {
+  background-color: black;
+  box-shadow: #E91F57 0 -25px 18px -14px inset, #E91F57 0 1px 2px, #E91F57 0 2px 4px, #E91F57 4px 8px, #E91F57 0 8px 16px, #E91F57 0 16px 32px;
+  color: white;
+}
+footer .container .socialmediadiv .buttonsdiv .ln {
+  background-color: #08648c;
+  box-shadow: #043a52 0 -25px 18px -14px inset, #043a52 0 1px 2px, #043a52 0 2px 4px, #043a52 0 4px 8px, #043a52 0 8px 16px, #043a52 0 16px 32px;
+  color: white;
+}
+footer .container .socialmediadiv .buttonsdiv .da {
+  background-color: #00FBAC;
+  box-shadow: #035b3f 0 -25px 18px -14px inset, #035b3f 0 1px 2px, #035b3f 0 2px 4px, #035b3f 4px 8px, #035b3f 0 8px 16px, #035b3f 0 16px 32px;
+  color: white;
+}
+footer .container .socialmediadiv .buttonsdiv .wp {
+  background-color: #00FBAC;
+  box-shadow: #035b3f 0 -25px 18px -14px inset, #035b3f 0 1px 2px, #035b3f 0 2px 4px, #035b3f 4px 8px, #035b3f 0 8px 16px, #035b3f 0 16px 32px;
+  color: white;
+}
+footer .container .footdiv {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+footer .container .footdiv p {
+  color: #FF2800;
+  font-size: 25px;
+  margin-bottom: 0rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -975,5 +1326,591 @@ main #news .container .title h1 {
   }
   main #howitworks .container .row .arrow2 {
     display: none;
+  }
+}
+@media screen and (max-width: 1092px) {
+  main #entrancesection {
+    height: 500px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 340px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 340px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 340px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 340px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 280px;
+    top: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 50px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 340px;
+    top: 50px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 920px) {
+  main #entrancesection {
+    height: 500px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 200px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 250px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 180px;
+    top: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 40px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 300px;
+    top: 80px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  main #entrancesection {
+    height: 500px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 150px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 250px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 180px;
+    top: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 200px;
+    top: 80px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #entrancesection {
+    height: 400px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 150px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 250px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 150px;
+    top: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 30px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 200px;
+    top: 80px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 535px) {
+  main #entrancesection {
+    height: 400px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    left: 100px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    left: 150px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 120px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 120px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 120px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 200px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 120px;
+    top: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 150px;
+    top: 80px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #entrancesection {
+    height: 350px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    top: 40px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    left: 120px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    left: 100px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    left: 100px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 20px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    left: 170px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 120px;
+    top: 15px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 span {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 130px;
+    top: 60px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 25px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #entrancesection {
+    height: 300px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    top: 40px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    top: 30px;
+    left: 80px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    top: 30px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    top: 30px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 10px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    top: 20px;
+    left: 150px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 80px;
+    top: 10px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 span {
+    font-size: 18px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 140px;
+    top: 50px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 20px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #entrancesection {
+    height: 300px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    top: 40px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    top: 30px;
+    left: 80px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    top: 30px;
+    left: 70px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    top: 20px;
+    left: 70px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 10px;
+    left: 70px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    top: 20px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 80px;
+    top: 10px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 100px;
+    top: 60px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 330px) {
+  main #entrancesection {
+    height: 250px;
+  }
+  main #entrancesection .carousel .mercedesdiv {
+    top: 40px;
+    left: 70px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .mercedesdiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .ferraridiv {
+    top: 30px;
+    left: 80px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .ferraridiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .bmwdiv {
+    top: 30px;
+    left: 80px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .bmwdiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .tesladiv {
+    top: 35px;
+    left: 80px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .tesladiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .toggdiv {
+    top: 10px;
+    left: 100px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .toggdiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .toyotadiv {
+    top: 20px;
+    left: 130px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .toyotadiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .galendwagendiv {
+    left: 80px;
+    top: 10px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .galendwagendiv .wrapper h1 span {
+    font-size: 10px;
+  }
+  main #entrancesection .carousel .forddiv {
+    left: 130px;
+    top: 50px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 {
+    font-size: 15px;
+  }
+  main #entrancesection .carousel .forddiv .wrapper h1 span {
+    font-size: 10px;
   }
 }
