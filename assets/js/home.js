@@ -30,14 +30,11 @@ function openProductDetail(productId) {
     window.location.href = `detailpage${productId}.html`;
 }
 getproducts()
-// pagination.addEventListener ('click',getproducts)
 
 const searchinput = document.getElementById('searchinput');
 const searchform = document.getElementById('searchform');
 
-// function openProductDetail(productId) {
-//   console.log(`Open product detail for ID: ${productId}`);
-// }
+
 
 function searchbyname(e) {
   ourproducts.innerHTML = '';
