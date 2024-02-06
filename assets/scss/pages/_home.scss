@@ -562,11 +562,6 @@ $body-background: #353535;
     left: 300px;
     $avatar-size: 32px;
     $body-background: #353535;
-    
- 
-   
-
-  
     .wrapper {
       text-align: center;
       h1 {
@@ -581,7 +576,6 @@ $body-background: #353535;
         background-size: 200% auto;
         color: #fff;
         background-clip: text;
-      
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: textclip 1.5s linear infinite;
@@ -591,7 +585,6 @@ $body-background: #353535;
         }
       }
     }
-    
     @keyframes textclip {
       to {
         background-position: 200% center;
@@ -613,6 +606,22 @@ $body-background: #353535;
     padding-bottom: 30px;
     .container{
         width: 95%;
+       #pagination{
+            background-color: $main-color;
+            color: white;
+            border: 2px solid $main-color;
+            margin-left: 10px;
+                width: 30%;
+                border-radius: 5px;
+                padding: 5px;
+            &:hover{
+                background-color: white;
+                border: 2px solid black;
+                color: $main-color;
+                transition: 0.3s;
+                
+            }
+        }
         .title{
             margin-top: 30px;
             margin-bottom: 30px;
@@ -620,8 +629,116 @@ $body-background: #353535;
                 font-weight: bolder;
             }
         }
+        .searchandsort{
+            margin-top: 30px;
+            margin-bottom: 30px;
+           padding-bottom: 30px;
+           display: flex;
+           input{
+            padding: 10px;
+            margin-right: -20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1px solid black;
+            border-right: none;
+           
+           }
+           button{
+            background-color: $main-color;
+            color: white;
+            margin-left: 10px;
+            border: none;
+                padding: 15px;
+                margin-right: 30px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+border-left: none;
+            &:hover{
+                background-color: white;
+                color: $main-color;
+                transition: 0.3s;
+                
+            }
+        }
+        select{
+            background-color: $main-color;
+            color: white;
+            margin-left: 10px;
+            border: none;
+                padding: 12px;
+                margin-right: 30px;
+                border-radius: 10px;
+            &:hover{
+                background-color: white;
+                color: $main-color;
+                transition: 0.3s;
+                
+            }  
+        }
+        }
         #ourproducts{
+          
             .box{
+                .boxproducts{
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 20px rgb(111, 111, 111);
+                    text-align: center;
+                    margin-bottom: 30px;
+                    transition: transform 0.3s ease;
+
+                    cursor: pointer;
+                    img{width: 100%;
+                        border-radius: 10px;
+                    }
+                    h1{
+                        font-weight: bolder;
+                        color: black;
+                        font-size: 25px;
+                        margin-top: 15px;
+                    }
+                    .detail{
+                     display: flex;
+                     text-align: start;
+                     justify-content: space-between;
+font-weight: bolder;       
+               
+                    }
+                    p{
+                        font-weight: bolder;
+                        span{
+                            color: $main-color;
+                        }  
+                    }
+                    button{
+                        background-color: $main-color;
+                        color: white;
+                        border: 2px solid $main-color;
+                        margin-left: 10px;
+                            width: 50%;
+                            border-radius: 5px;
+                            padding: 5px;
+                        &:hover{
+                            background-color: white;
+                            border: 2px solid black;
+                            color: $main-color;
+                            transition: 0.3s;
+                            
+                        }
+                    }
+                }
+                .boxproducts:hover{
+                    transform: scale(1.1); 
+h1{
+    color: $main-color;
+    transition: 0.3s;
+}
+                }
+            }
+          
+            .sortproducts{
+                margin-top: 30px;
+                margin-bottom: 30px;
                 .boxproducts{
                     padding: 20px;
                     border-radius: 10px;
@@ -1968,6 +2085,22 @@ footer{
 }
 @media screen and (max-width:535px) {
     main{
+        #products{
+            .container{
+                .searchandsort{
+                    display: flex;
+                    flex-direction: column;
+                    form{
+                        margin-bottom: 20px;
+                    }
+                    select{
+                        margin-left: 0px;
+                        width: 30%;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
         #entrancesection{
             height: 400px;
             .carousel{
@@ -2152,6 +2285,19 @@ footer{
 }
 @media screen and (max-width:450px) {
     main{
+       
+        #products{
+            .container{
+                .searchandsort{
+                 
+                    select{
+                        margin-left: 0px;
+                        width: 30%;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
         #entrancesection{
             height: 300px;
             .carousel{
@@ -2349,6 +2495,19 @@ footer{
     }
 }
 
+@media screen and (max-width:460px) {
+    main{
+       
+        #products{
+            .container{
+                #pagination{
+                width: 35%;
+                }
+            }
+        }
+}}
+
+
 
 @media screen and (max-width:330px) {
     main{
@@ -2457,3 +2616,32 @@ footer{
     }
 }
 
+@media screen and (max-width:380px) {
+    main{
+        #products{
+            .container{
+                #pagination{
+                    width: 50%;
+                    }
+                .searchandsort{
+                 form{
+                    input{
+                        padding: 5px;
+                    }
+                    button{
+                        padding: 10px;
+                    }
+                 }
+                    select{
+                        margin-left: 0px;
+                        width: 30%;
+                        font-size: 10px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+       
+}
+
+}

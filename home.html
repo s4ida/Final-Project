@@ -199,9 +199,25 @@
   <div class="title">
     <h1>Auctions</h1>
   </div>
-  <div id="ourproducts" class="row">
- 
+  <div class="searchandsort">
+    <form id="searchform">
+      <input type="text" id="searchinput" placeholder="Search Car">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <select id="filterdata">
+      <option value="1">Default</option>
+      <option value="2">A-Z</option>
+      <option value="3">Z-A</option>
+      <option value="4">from old to new</option>
+      <option value="5">from new to old</option>
+
+    </select>
   </div>
+  <div id="ourproducts" class="row">
+
+  </div>
+  <!-- <button id="pagination">Load More Cars</button> -->
+
 </div>
             </section>
             <section id="aboutsection">
