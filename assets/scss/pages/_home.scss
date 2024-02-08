@@ -677,9 +677,15 @@ border-left: none;
         }
         }
         #ourproducts{
-          
+          margin-bottom: 30px;
             .box{
                 .boxproducts{
+                   background-color: #EA9610;
+                   .buttons{
+                    button{
+                        background-color: #57d75b;
+                    }
+                   }
                     padding: 20px;
                     border-radius: 10px;
                     box-shadow: 5px 5px 20px rgb(111, 111, 111);
@@ -694,22 +700,17 @@ border-left: none;
                     h1{
                         font-weight: bolder;
                         color: black;
-                        font-size: 25px;
+                        font-size: 20px;
                         margin-top: 15px;
                     }
-                    .detail{
-                     display: flex;
-                     text-align: start;
-                     justify-content: space-between;
-font-weight: bolder;       
-               
-                    }
+                 
                     p{
                         font-weight: bolder;
                         span{
                             color: $main-color;
                         }  
                     }
+                    
                     button{
                         background-color: $main-color;
                         color: white;
@@ -726,6 +727,7 @@ font-weight: bolder;
                             
                         }
                     }
+                  
                 }
                 .boxproducts:hover{
                     transform: scale(1.1); 

@@ -919,7 +919,11 @@ main #products .container .searchandsort select:hover {
   color: #FF2800;
   transition: 0.3s;
 }
+main #products .container #ourproducts {
+  margin-bottom: 30px;
+}
 main #products .container #ourproducts .box .boxproducts {
+  background-color: #EA9610;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgb(111, 111, 111);
@@ -928,6 +932,9 @@ main #products .container #ourproducts .box .boxproducts {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+main #products .container #ourproducts .box .boxproducts .buttons button {
+  background-color: #57d75b;
+}
 main #products .container #ourproducts .box .boxproducts img {
   width: 100%;
   border-radius: 10px;
@@ -935,14 +942,8 @@ main #products .container #ourproducts .box .boxproducts img {
 main #products .container #ourproducts .box .boxproducts h1 {
   font-weight: bolder;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 15px;
-}
-main #products .container #ourproducts .box .boxproducts .detail {
-  display: flex;
-  text-align: start;
-  justify-content: space-between;
-  font-weight: bolder;
 }
 main #products .container #ourproducts .box .boxproducts p {
   font-weight: bolder;
