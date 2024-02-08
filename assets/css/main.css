@@ -4,6 +4,93 @@
   box-sizing: border-box;
 }
 
+#whatissedan {
+  width: 100%;
+}
+#whatissedan .container {
+  width: 95%;
+}
+#whatissedan .container .title {
+  text-align: center;
+}
+#whatissedan .container .informationsaboutsedans h1 {
+  color: #FF2800;
+}
+#whatissedan .container .informationsaboutsedans p {
+  font-size: 17px;
+}
+#whatissedan .container .title {
+  text-align: center;
+}
+#whatissedan .container .title h1 {
+  color: #FF2800;
+}
+#whatissedan .container .sedans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#whatissedan .container .sedans h1 {
+  font-size: 25px;
+  color: #FF2800;
+  text-align: start;
+}
+#whatissedan .container .sedans img {
+  border-radius: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(111, 111, 111);
+  text-align: center;
+  width: 60%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+#whatissedan .container .sedans:hover {
+  background-color: white;
+  color: #FF2800;
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+#whatissedan .container .row .newsedans {
+  border-radius: 10px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(111, 111, 111);
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+#whatissedan .container .row .newsedans:hover {
+  background-color: white;
+  color: #FF2800;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#whatissedan .container .row .newsedans img {
+  width: 100%;
+  height: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  #whatissedan .container .sedans img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #whatissedan .container #whatissedan h1 {
+    font-size: 20px;
+  }
+  #whatissedan .container #whatissedan p {
+    font-size: 15px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main #gallerysection {
   margin-bottom: 30px;
 }
@@ -236,93 +323,6 @@ main #gallerysection .container .bid button:hover {
 @media screen and (max-width: 400px) {
   #gallerysection .container .title h1 {
     font-size: 25px;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#whatissedan {
-  width: 100%;
-}
-#whatissedan .container {
-  width: 95%;
-}
-#whatissedan .container .title {
-  text-align: center;
-}
-#whatissedan .container .informationsaboutsedans h1 {
-  color: #FF2800;
-}
-#whatissedan .container .informationsaboutsedans p {
-  font-size: 17px;
-}
-#whatissedan .container .title {
-  text-align: center;
-}
-#whatissedan .container .title h1 {
-  color: #FF2800;
-}
-#whatissedan .container .sedans {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#whatissedan .container .sedans h1 {
-  font-size: 25px;
-  color: #FF2800;
-  text-align: start;
-}
-#whatissedan .container .sedans img {
-  border-radius: 10px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgb(111, 111, 111);
-  text-align: center;
-  width: 60%;
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-#whatissedan .container .sedans:hover {
-  background-color: white;
-  color: #FF2800;
-  transition: 0.3s;
-  transform: scale(1.02);
-}
-#whatissedan .container .row .newsedans {
-  border-radius: 10px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgb(111, 111, 111);
-  text-align: center;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
-}
-#whatissedan .container .row .newsedans:hover {
-  background-color: white;
-  color: #FF2800;
-  transition: 0.3s;
-  transform: scale(1.05);
-}
-#whatissedan .container .row .newsedans img {
-  width: 100%;
-  height: 60%;
-}
-
-@media screen and (max-width: 900px) {
-  #whatissedan .container .sedans img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 500px) {
-  #whatissedan .container #whatissedan h1 {
-    font-size: 20px;
-  }
-  #whatissedan .container #whatissedan p {
-    font-size: 15px;
   }
 }
 * {
@@ -923,7 +923,6 @@ main #products .container #ourproducts {
   margin-bottom: 30px;
 }
 main #products .container #ourproducts .box .boxproducts {
-  background-color: #EA9610;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgb(111, 111, 111);
@@ -931,9 +930,6 @@ main #products .container #ourproducts .box .boxproducts {
   margin-bottom: 30px;
   transition: transform 0.3s ease;
   cursor: pointer;
-}
-main #products .container #ourproducts .box .boxproducts .buttons button {
-  background-color: #57d75b;
 }
 main #products .container #ourproducts .box .boxproducts img {
   width: 100%;
