@@ -1,4 +1,5 @@
 const ourproducts = document.getElementById ('ourproducts')
+const pagination = document.getElementById('pagination')
 function getproducts () {
 
      axios.get(`https://655c2fe4ab37729791aa011f.mockapi.io/swp102/products`)
@@ -11,13 +12,14 @@ function getproducts () {
         <div class="boxproducts">
         <img src="${item.image}" alt="">
         <h1>${item.Name}</h1>
-        <button onclick="addtodetailpage(${item.id})"><a href="/detailpage.html">View Details</a>
       <div class="btns">
+      <button onclick="addtodetailpage(${item.id})"><a href="/detailpage.html"><i class="fa-solid fa-circle-info"></i></a>
     <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
     <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
 </div>
 </div>
         `
+    
         ourproducts.appendChild(box)
         })
       
