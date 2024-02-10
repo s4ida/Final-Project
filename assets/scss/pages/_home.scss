@@ -222,15 +222,39 @@ padding: 0px;
 }
     }
     .basket{
-        font-size: 20px;
+        position: relative;
+        font-size: 25px;
+        margin-right: 20px;
         &:hover{
             color: $main-color;
             transition: 0.3s;
+            span{
+                background-color: white;
+                color: $main-color;
+            }
+        }
+        span{
+            position: absolute;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            background-color: $main-color;
+       
+            font-size: 15px;
+      left: 33px;
+     bottom: 18px;
         }
     }
+    .wishlist{
+        position: relative;
+        font-size: 25px;
+        margin-right: 20px;
+        &:hover{
+            color: $main-color;
+            transition: 0.3s;
+            }    }
     .sell{
         background-color: $main-color;
-        width: 15%;
         color: white;
         border: 2px solid $main-color;
         font-size: 20px;
@@ -239,6 +263,7 @@ padding: 0px;
             color: $main-color;
             border: 2px solid black;
             transition: 0.3s;
+       
         }
     }
 }
@@ -599,6 +624,46 @@ $body-background: #353535;
 
 
 #products{
+    #messageContainer {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: #333;
+        display: none; // İlk başta gizli
+        transition: opacity 0.3s ease;
+      
+        &.success {
+          background-color: #2ecc71;
+          color: #fff;
+        }
+      }
+      
+      // Sepet butonu stil
+      .basket {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #2980b9;
+        }
+      
+        span {
+          margin-left: 5px;
+          font-weight: bold;
+        }
+      }
     width: 100%;
     margin-top: 30px;
     padding-top: 30px;
@@ -680,8 +745,14 @@ border-left: none;
           margin-bottom: 30px;
             .box{
                 .boxproducts{
+                    .detailbtn{
+                        margin-bottom: 10px;
+                    }
                     .btns{
-                        display: flex;
+                        display: flex;                        justify-content: center;
+                        button{
+width: 30%;
+                        }
                     }
                
                     padding: 20px;
@@ -718,7 +789,7 @@ border-left: none;
                             padding: 5px;
                             a{
                                 color: white;
-
+text-decoration: none;
                               
                             }
                         &:hover{

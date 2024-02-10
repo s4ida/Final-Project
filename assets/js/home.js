@@ -1,21 +1,27 @@
 const ourproducts = document.getElementById ('ourproducts')
 const pagination = document.getElementById('pagination')
+const basketCount = document.getElementById('basketCount');
+
+
 function getproducts () {
 
      axios.get(`https://655c2fe4ab37729791aa011f.mockapi.io/swp102/products`)
     .then(res=>{
         products = res.data
-       products.map(item=>{
+       products.map((item,index)=>{
             let box = document.createElement('div')
             box.className = 'box col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3'
         box.innerHTML = `
         <div class="boxproducts">
         <img src="${item.image}" alt="">
         <h1>${item.Name}</h1>
+        <button class="detailbtn" onclick="addtodetailpage(${item.id})"><a href="/detailpage.html">View Details</a></button>
+
       <div class="btns">
-      <button onclick="addtodetailpage(${item.id})"><a href="/detailpage.html"><i class="fa-solid fa-circle-info"></i></a>
-    <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+    <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i>
+    </button>
     <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+
 </div>
 </div>
         `
@@ -36,18 +42,30 @@ function addtodetailpage(id) {
 }
 getproducts()
 
-function addtobasket(id){
-  let cart = JSON.parse(localStorage.getItem('cart')) || []
-  let productitem = cart.find((item)=>item.id == id)
-  if(productitem){
-      productitem.count=(productitem.count || 1) +1
+function addtobasket(id) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let productitem = cart.find((item) => item.id == id);
+
+  if (productitem) {
+    // Ürün zaten sepette, bulunduğu index'i bul ve kaldır
+  
+    const index = cart.indexOf(productitem);
+    if (index !== -1) {
+      cart.splice(index, 1);
+    }
+  } else {
+    // Ürün sepette yok, sepete ekle
+    cart.push(products.find(item => item.id == id));
   }
-  else{
-      let newitem = {...products.find(item=>item.id == id),count:1}
-      cart.push(newitem)
-  }
-  localStorage.setItem('cart',JSON.stringify(cart))
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateBasketCount();
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', updateBasketCount);
 
 function addtowishlist(id){
   let wishlist= JSON.parse(localStorage.getItem('wishlist')) || []
@@ -63,7 +81,11 @@ function addtowishlist(id){
 
 }
 
-
+function updateBasketCount() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const itemCount = cart.reduce((total, item) => total + (item.count || 0), 0);
+    basketCount.textContent = itemCount.toString();
+}
 
 const searchinput = document.getElementById('searchinput');
 const searchform = document.getElementById('searchform');
@@ -79,18 +101,18 @@ function searchbyname(e) {
       const searchdata = products.filter((item) => item.Name.toLowerCase().startsWith(searchinput.value.toLowerCase()));
       searchdata.map(item => {
         const sortproducts = document.createElement('div');
-        sortproducts.className = "sortproducts col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
+        sortproducts.className = "box col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
         sortproducts.innerHTML = `
           <div class="boxproducts">
             <img src="${item.image}" alt="">
             <h1>${item.Name}</h1>
-            <div class="detail">
-              <p>${item.Year}</p>
-              <p>${item.Mileage}KM</p>
-              <p>${item.FuelType}</p>
-            </div>
-            <p>Current Bid:<span>${item.CurrentBid}</span></p>
-            <button onclick="openProductDetail(${item.id})">View Details</button>
+   
+            <button class="detailbtn"   onclick="openProductDetail(${item.id})">View Details</button>
+            <div class="btns">
+            <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+        
+        </div>
           </div>
         `;
         ourproducts.appendChild(sortproducts);
@@ -120,13 +142,13 @@ function sortdatadefault(){
                 <div class="boxproducts">
                 <img src="${item.image}" alt="">
                 <h1>${item.Name}</h1>
-                <div class="detail">
-                  <p>${item.Year}</p>
-                  <p>${item.Mileage}KM</p>
-                  <p>${item.FuelType}</p>
-                </div>
-                <p>Current Bid:<span>${item.CurrentBid}</span></p>
-                <button onclick="openProductDetail(${item.id})">View Details</button>
+  
+                <button class="detailbtn"  onclick="openProductDetail(${item.id})">View Details</button>
+                <div class="btns">
+                <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+            
+            </div>
               </div>
                 `
              ourproducts.appendChild(box)
@@ -154,13 +176,13 @@ function sortdatadefault(){
                     <div class="boxproducts">
                     <img src="${item.image}" alt="">
                     <h1>${item.Name}</h1>
-                    <div class="detail">
-                      <p>${item.Year}</p>
-                      <p>${item.Mileage}KM</p>
-                      <p>${item.FuelType}</p>
-                    </div>
-                    <p>Current Bid:<span>${item.CurrentBid}</span></p>
-                    <button onclick="openProductDetail(${item.id})">View Details</button>
+     
+                    <button class="detailbtn"  onclick="openProductDetail(${item.id})">View Details</button>
+                    <div class="btns">
+                    <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+                
+                </div>
                   </div>
                     `
                   ourproducts.appendChild(box)
@@ -186,13 +208,12 @@ function sortdatadefault(){
                         <div class="boxproducts">
                         <img src="${item.image}" alt="">
                         <h1>${item.Name}</h1>
-                        <div class="detail">
-                          <p>${item.Year}</p>
-                          <p>${item.Mileage}KM</p>
-                          <p>${item.FuelType}</p>
-                        </div>
-                        <p>Current Bid:<span>${item.CurrentBid}</span></p>
-                        <button onclick="openProductDetail(${item.id})">View Details</button>
+                                            <button onclick="openProductDetail(${item.id})">View Details</button>
+                        <div class="btns">
+                        <button onclick="addtobasket(${item.id})"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button onclick="addtowishlist(${item.id})"><i class="fa-regular fa-heart"></i></button>
+                    
+                    </div>
                       </div>
                         `
                        ourproducts.appendChild(box)
@@ -203,69 +224,10 @@ function sortdatadefault(){
             }
             filterdata.addEventListener('change',sortdataZA)
 
-            function old() {
-            ourproducts.innerHTML='';
-                let selectvalue = filterdata.value;
-                if(selectvalue==='4'){
-                  axios.get('https://655c2fe4ab37729791aa011f.mockapi.io/swp102/products')
-                  .then(res=>{
-                    products=res.data
-                    let sorteddata=products.sort((a,b)=>a.Year-b.Year)
-              sorteddata.map(item=>{
-                let box = document.createElement('div')
-                box.className = "box col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
-                box.innerHTML = `   
-                <div class="boxproducts">
-                <img src="${item.image}" alt="">
-                <h1>${item.Name}</h1>
-                <div class="detail">
-                  <p>${item.Year}</p>
-                  <p>${item.Mileage}KM</p>
-                  <p>${item.FuelType}</p>
-                </div>
-                <p>Current Bid:<span>${item.CurrentBid}</span></p>
-                <button onclick="openProductDetail(${item.id})">View Details</button>
-              </div>
-                `
-               ourproducts.appendChild(box);
-              })
-                  })
-                }
-              }
-         filterdata.addEventListener('change',old)
+
 
 
          
-         function newcars() {
-            ourproducts.innerHTML='';
-                let selectvalue = filterdata.value;
-                if(selectvalue==='5'){
-                  axios.get('https://655c2fe4ab37729791aa011f.mockapi.io/swp102/products')
-                  .then(res=>{
-                    products=res.data
-                    let sorteddata=products.sort((a,b)=>b.Year-a.Year)
-              sorteddata.map(item=>{
-                let box = document.createElement('div')
-                box.className = "box col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
-                box.innerHTML = `   
-                <div class="boxproducts">
-                <img src="${item.image}" alt="">
-                <h1>${item.Name}</h1>
-                <div class="detail">
-                  <p>${item.Year}</p>
-                  <p>${item.Mileage}KM</p>
-                  <p>${item.FuelType}</p>
-                </div>
-                <p>Current Bid:<span>${item.CurrentBid}</span></p>
-                <button onclick="openProductDetail(${item.id})">View Details</button>
-              </div>
-                `
-               ourproducts.appendChild(box);
-              })
-                  })
-                }
-              }
-         filterdata.addEventListener('change',newcars)
 
 
 

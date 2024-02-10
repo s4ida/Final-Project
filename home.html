@@ -94,12 +94,14 @@
             <li>
                 <a class="nav-link pages" href="#">Get in Touch</a>
             </li>
-            <li>
-                <a class="nav-link pages" href="#"><i class="fa-regular fa-heart"></i>Favorites</a>
-            </li>
+          
+    
           </ul>
-        <a class="btn  my-2 my-sm-0 basket" type="submit"><i class="fa-solid fa-basket-shopping"></i></a>
-            <button class="btn my-2 my-sm-0 sell" type="submit">Sell Now</button>
+          <a  class="nav-link pages wishlist" href="/wishlist.html"><i class="fa-regular fa-heart"></i></a>
+
+        <a href="/basket.html" class="btn  my-2 my-sm-0 basket" type="submit"><i class="fa-solid fa-basket-shopping"></i>      <span id="basketCount">0</span></a>
+  
+        <button class="btn my-2 my-sm-0 sell" type="submit">Sell Now</button>
         </div>
       </nav>
   </header>
@@ -208,13 +210,12 @@
       <option value="1">Default</option>
       <option value="2">A-Z</option>
       <option value="3">Z-A</option>
-      <option value="4">from old to new</option>
-      <option value="5">from new to old</option>
+
 
     </select>
   </div>
   <div id="ourproducts" class="row">
-
+    <div id="messageContainer"></div>
   </div>
   <button id="pagination">Load More Cars</button>
 

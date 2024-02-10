@@ -1,55 +1,37 @@
 const detailpagediv = document.getElementById('detailpagediv');
-const table = document.getElementById('table')
+const features = document.getElementById('features')
 const photos = document.getElementById('photos')
 const descriptionsdiv = document.getElementById('descriptionsdiv')
 function getproducts() {
-table.innerHTML = ``;
 photos.innerHTML = '';
 descriptionsdiv.innerHTML = '' ;
 
     let detailpage = JSON.parse(localStorage.getItem('detailpage')) || [];
     console.log(detailpage);
-      const thRow = document.createElement('tr');
-      thRow.innerHTML = `
-          <th>Name</th>
-          <th>Current Bid</th>
-          <th>Mileage</th>
-          <th>Fuel Type</th>
-          <th>Year</th>
-          <th>Airbags</th>
-          <th>Body</th>
-          <th>Color</th>
-          <th>Seats</th>
-          <th>Door</th>
-          <th>Gearbox</th>
-          <th>Climatisation</th>
-          <th>Parking</th>
-          <th>Power</th>
-      `;
-      table.appendChild(thRow);
+ 
   
     detailpage.map((item) => {
-        const tr= document.createElement('tr');
-        tr.innerHTML = `
-        <td>${item.Name}</td>
-        <td>${item.CurrentBid}</td>
-        <td>${item.Mileage}</td>
-        <td>${item.FuelType}</td>
-        <td>${item.Year}</td>
-        <td>${item.Airbags}</td>
-        <td>${item.Body}</td>
-        <td>${item.Color}</td>
-        <td>${item.Seats}</td>
-        <td>${item.Door}</td>
-        <td>${item.Gearbox}</td>
-        <td>${item.Climatisation}</td>
-        <td>${item.Parking}</td>
-        <td>${item.Power}</td>
+        const ul= document.createElement('ul');
+       ul.innerHTML = `
+        <li><span>Name:</span>${item.Name}</li>
+        <li><span>Current Bid:</span>${item.CurrentBid}</li>
+        <li><span>Milleage:</span>${item.Mileage}</li>
+        <li><span>Fuel Type:</span>${item.FuelType}</li>
+        <li><span>Year:</span>${item.Year}</li>
+        <li><span>Airbags:</span>${item.Airbags}</li>
+        <li><span>Body:</span>${item.Body}</li>
+        <li><span>Color:</span>${item.Color}</li>
+        <li><span>Seats:</span>${item.Seats}</li>
+        <li><span>Door:</span>${item.Door}</li>
+        <li><span>Gearbox:</span>${item.Gearbox}</li>
+        <li><span>Climitisation:</span>${item.Climatisation}</li>
+        <li><span>Parking:</span>${item.Parking}</li>
+        <li><span>Power:</span>${item.Power}</li>
         
 
         `;
         const container= document.createElement('div');
-        container.className = "container"
+        container.className = "photo-container"
         container.innerHTML = `
         <div class="card">
         <img src="${item.image1}">
@@ -84,7 +66,7 @@ descriptions.innerHTML = `
 
 
         photos.appendChild(container);
-     table.appendChild(tr);
+     features.appendChild(ul);
      descriptionsdiv.appendChild(descriptions)
     });
 }
